@@ -3,11 +3,24 @@ class Avatar:
         self.name = ""
         self.money = 0
         # avatar health values range between 0 and 100
-        self.hunger = 100
+        self.hunger = 100 # 100 = full, 0 = hungry
         self.blatter = 0
         self.sleep = 100
         self.hygiene = 100
         self.happiness = 100
+
+
+    def go_to_work(self):
+        # update sleep -- decrease sleep by 75
+        # increase money -- increase 5022
+        # update  hunger -- decrease hunger by 90
+        pass
+
+        
+
+
+
+
 
     def update_hunger(self, value):
         if self.hunger + value > 100:
@@ -57,17 +70,6 @@ class Avatar:
         else:
             update_hunger(25)
 
-    def sub(self, num1):
-        self.value = self.value - num1 
-
-    # def div(self, num1, num2):
-    #     ans = num1 / num2
 
 
-# print(Calculator().add(3, 2))
-x = Calculator()
-saving = x.add(1000,50)
-exp = x.sub(300, 1)
-
-print("Savings: " + str(saving))
-print("Expenses: " + str(exp))
+Avatar()
