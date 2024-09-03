@@ -9,6 +9,44 @@ class Avatar:
         self.hygiene = 100
         self.happiness = 100
 
+    def go_to_work (self):
+        # update sleep -- decrease sleepy by 75
+        self.sleep -= 75
+        # increase money -- increase 5022
+        self.money += 5022
+        # update hunger -- decrease 90
+        self.hunger -= 90
+    def go_to_vacation (self):
+        # update happines -- increase to 1000
+        self.happiness += 1000
+        # update sleep -- decrease 50
+        self.sleep -= 50
+        # update money -- decrease 1000
+        self.money -= 1000
+    def go_to_party (self):
+        # update happiness -- increase 1000
+        self.happiness += 1000
+        # update sleep -- decrease 50
+        self.sleep -= 50
+        # update hygiene -- decrease 100
+        self.hygiene -= 100
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     def update_hunger(self, value):
         if self.hunger + value > 100:
             self.hunger = 100
@@ -57,17 +95,34 @@ class Avatar:
         else:
             update_hunger(25)
 
-    def sub(self, num1):
-        self.value = self.value - num1 
+desmen = Avatar()
+desmen.go_to_work()
+desmen.go_to_vacation()
+desmen.go_to_party()
+print(desmen.hunger)
+print("money", desmen.money)
+print("sleep", desmen.sleep)
+print("happiness", desmen.happiness)
+print("hygiene", desmen.hygiene)
 
-    # def div(self, num1, num2):
-    #     ans = num1 / num2
+
+def sub(self, num1):
+    self.value = self.value - num1 
+
+# def div(self, num1, num2):
+#     ans = num1 / num2
 
 
-# print(Calculator().add(3, 2))
-x = Calculator()
-saving = x.add(1000,50)
-exp = x.sub(300, 1)
 
-print("Savings: " + str(saving))
-print("Expenses: " + str(exp))
+
+
+# # print(Calculator().add(3, 2))
+# x = Calculator()
+# saving = x.add(1000,50)
+# exp = x.sub(300, 1)
+
+# print("Savings: " + str(saving))
+# print("Expenses: " + str(exp))
+
+
+
