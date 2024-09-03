@@ -9,18 +9,13 @@ class Avatar:
         self.hygiene = 100
         self.happiness = 100
 
-
     def go_to_work(self):
         # update sleep -- decrease sleep by 75
+        self.sleep -= 75
         # increase money -- increase 5022
+        self.money += 5022
         # update  hunger -- decrease hunger by 90
-        pass
-
-        
-
-
-
-
+        self.hunger -= 90
 
     def update_hunger(self, value):
         if self.hunger + value > 100:
@@ -71,5 +66,6 @@ class Avatar:
             update_hunger(25)
 
 
-
-Avatar()
+desmen = Avatar()
+desmen.go_to_work()
+print(desmen.hunger)
